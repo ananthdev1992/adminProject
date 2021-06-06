@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-lg-12">
+      <nb-card>
+        <nb-card-header>Email Settings</nb-card-header>
+        <nb-card-body>
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="SMTP_username" class="label">SMTP User Name</label>
+                    <input type="text" nbInput fullWidth id="SMTP_username" placeholder="Enter SMTP User Name">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="SMTP_password" class="label">SMTP Password</label>
+                      <input type="text" nbInput fullWidth id="SMTP_password" placeholder="Enter SMTP Password">
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="hostname" class="label">Host Name</label>
+                    <input type="text" nbInput fullWidth id="hostname" placeholder="Enter Host Name">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="SMTP_portNumber" class="label">SMTP Port Number</label>
+                    <input type="text" nbInput fullWidth id="SMTP_portNumber" placeholder="Enter SMTP Port Number">
+                  </div>
+                </div>
+              </div>
+              <button type="submit" nbButton status="primary" (click)="Update()">Update Email Settings</button>
+              <button type="submit" nbButton class="btCancel" (click)="Cancel()">Cancel</button>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+  

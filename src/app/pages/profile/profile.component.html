@@ -1,0 +1,84 @@
+<div class="row">
+    <div class="col-lg-12">
+      <nb-card *ngIf="method == 'profile'">
+        <nb-card-header>Edit Profile</nb-card-header>
+        <nb-card-body>
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="name" class="label">First Name</label>
+                    <input type="text" nbInput fullWidth id="name" placeholder="Enter First Name">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="lastName" class="label">Last Name</label>
+                    <input type="text" nbInput fullWidth id="lastName" placeholder="Enter Last Name">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="userName" class="label">User Name</label>
+                    <input type="text" nbInput fullWidth id="userName" placeholder="Enter User Name">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="mailId" class="label">Email Id</label>
+                    <input type="email" nbInput fullWidth id="mailId" placeholder="Enter Email Id">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="contactNumber" class="label">Contact Number</label>
+                    <input type="text" nbInput fullWidth id="contactNumber" placeholder="Enter Contact Number">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="profileImage" class="label">Profile Image</label>
+                    <input type="file" nbInput fullWidth id="profileImage" placeholder="Select File">
+                  </div>
+                </div>
+              </div>
+              <button type="submit" nbButton status="primary" (click)="Update()">Update</button>
+              <button type="submit" nbButton class="btCancel" (click)="Cancel()">Cancel</button>
+        </nb-card-body>
+      </nb-card>
+
+      <nb-card *ngIf="method == 'password'">
+        <nb-card-header>Change Password</nb-card-header>
+        <nb-card-body>
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="currentPassword" class="label">Current Password</label>
+                    <input type="text" nbInput fullWidth id="currentPassword" placeholder="Enter Current Password">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="newPassword" class="label">New Password</label>
+                    <input type="text" nbInput fullWidth id="newPassword" placeholder="Enter New Password">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="confirmPassword" class="label">Confirm Password</label>
+                    <input type="text" nbInput fullWidth id="confirmPassword" placeholder="Enter Confirm Password">
+                  </div>
+                </div>
+              </div>
+              <button type="submit" nbButton status="primary" (click)="Change()">Change Password</button>
+              <button type="submit" nbButton class="btCancel" (click)="Cancel()">Cancel</button>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+  

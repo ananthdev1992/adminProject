@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-lg-12">
+      <nb-card>
+        <nb-card-header>SMS Settings</nb-card-header>
+        <nb-card-body>
+            <div class="row">
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label for="sms_url" class="label">SMS API URL</label>
+                    <input type="text" nbInput fullWidth id="sms_url" placeholder="Enter SMS API URL">
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="sms_username" class="label">SMS API User Name</label>
+                    <input type="text" nbInput fullWidth id="sms_username" placeholder="Enter SMS API User Name">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="sms_password" class="label">SMS API Password</label>
+                      <input type="text" nbInput fullWidth id="sms_password" placeholder="Enter SMS API Password">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="isKeyNeeded" class="label">Is SMS API needs API key ?</label>                      
+                      <label class="switch">
+                        <input id="isKeyNeeded" type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+              </div>
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="sms_key" class="label">SMS API Key</label>
+                    <input type="text" nbInput fullWidth id="sms_key" placeholder="Enter SMS API Key">
+                  </div>
+                </div>
+            </div>
+              <button type="submit" nbButton status="primary" (click)="Update()">Update SMS Settings</button>
+              <button type="submit" nbButton class="btCancel" (click)="Cancel()">Cancel</button>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+  

@@ -1,0 +1,64 @@
+
+<div class="row">
+    <div class="col-lg-12">
+      <nb-card>
+        <nb-card-header>Bank Management</nb-card-header>
+        <nb-card-body>
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="name" class="label">Bank Name</label>
+                    <input type="text" nbInput fullWidth id="name" placeholder="Enter Bank Name">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="code" class="label">Bank Code</label>
+                    <input type="text" nbInput fullWidth id="code" placeholder="Enter Bank Code">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="city" class="label">City</label>
+                    <input type="email" nbInput fullWidth id="city" placeholder="Enter City">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="location" class="label">Bank Location</label>
+                    <input type="text" nbInput fullWidth id="location" placeholder="Enter Bank Location">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="status" class="label">Status</label>                      
+                      <label class="switch">
+                        <input id="status" type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+              </div>
+              <button type="submit" nbButton status="primary">Submit</button>
+              <button type="submit" nbButton class="btCancel">Cancel</button>
+        </nb-card-body>
+      </nb-card>
+
+      <nb-card>
+        <nb-card-header>
+          Bank List
+        </nb-card-header>
+      
+        <nb-card-body>
+          <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
+          </ng2-smart-table>
+        </nb-card-body>
+      </nb-card>
+
+    </div>
+  </div>
+  
